@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+.page {
+  width: 1063px;
+  height: 591px;
+  position: relative;
+  overflow: hidden;
+  background: #050d1a;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ondas SVG inline */
+.waves {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.accent-line {
+  position: absolute; bottom: 0; right: 0;
+  width: 160px; height: 3px;
+  background: linear-gradient(90deg, rgba(0,180,255,0), #00b4ff);
+  opacity: 0.5;
+}
+.accent-dot {
+  position: absolute; top: 48px; left: 48px;
+  width: 7px; height: 7px; border-radius: 50%;
+  background: #00b4ff; opacity: 0.4;
+}
+
+/* ── INSTITUCIONAL FRENTE ── */
+.inst-inner {
+  position: absolute; inset: 0;
+  padding: 64px 76px;
+  display: flex; flex-direction: column; justify-content: space-between;
+}
+.inst-top { display: flex; align-items: flex-start; justify-content: space-between; }
+.inst-gk {
+  font-family: 'Playfair Display', serif; font-weight: 700;
+  font-size: 52px; color: #ffffff; letter-spacing: -2px; line-height: 1;
+}
+.inst-gk span { color: #0077bb; }
+.inst-gk-sub {
+  font-size: 11px; font-weight: 400; letter-spacing: 0.32em;
+  text-transform: uppercase; color: rgba(255,255,255,0.52); margin-top: 6px;
+}
+.inst-tag {
+  font-size: 10px; font-weight: 600; letter-spacing: 0.16em;
+  text-transform: uppercase; color: rgba(0,190,255,0.7);
+  border: 1.5px solid rgba(0,190,255,0.25); border-radius: 30px;
+  padding: 8px 20px; margin-top: 6px; white-space: nowrap;
+}
+.inst-mid { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 16px 0 0; }
+.inst-about {
+  font-size: 14px; font-weight: 300; line-height: 1.85;
+  color: rgba(255,255,255,0.42); max-width: 660px; letter-spacing: 0.02em;
+}
+.inst-about strong { color: rgba(255,255,255,0.75); font-weight: 500; }
+.inst-rule { width: 40px; height: 2px; background: #00b4ff; opacity: 0.65; border-radius: 2px; margin: 22px 0; }
+.inst-founders { display: flex; gap: 52px; }
+.founder-name {
+  font-family: 'Playfair Display', serif; font-weight: 700;
+  font-size: 20px; color: #ffffff; letter-spacing: -0.3px;
+}
+.founder-role {
+  font-size: 10px; font-weight: 300; letter-spacing: 0.16em;
+  text-transform: uppercase; color: rgba(255,255,255,0.32); margin-top: 4px;
+}
+.inst-bottom { display: flex; align-items: flex-end; justify-content: space-between; }
+.inst-contacts { display: flex; flex-direction: column; gap: 9px; }
+.ic { display: flex; align-items: center; gap: 11px; font-size: 13px; color: rgba(255,255,255,0.65); }
+.inst-social { font-size: 12px; font-weight: 500; color: rgba(0,190,255,0.6); letter-spacing: 0.06em; }
+
+/* ── VERSO ── */
+.verso-inner {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+}
+.verso-gk {
+  font-family: 'Playfair Display', serif; font-weight: 700;
+  font-size: 110px; color: #ffffff; letter-spacing: -6px; line-height: 1;
+}
+.verso-gk span { color: #0077bb; }
+.verso-sub {
+  font-size: 13px; font-weight: 400; letter-spacing: 0.38em;
+  text-transform: uppercase; color: rgba(255,255,255,0.52); margin-top: 14px;
+}
+.verso-rule { width: 44px; height: 2px; background: #00b4ff; opacity: 0.65; border-radius: 2px; margin: 28px 0; }
+.verso-frase {
+  font-family: 'Playfair Display', serif; font-style: italic;
+  font-size: 22px; color: rgba(255,255,255,0.72);
+  text-align: center; line-height: 1.5;
+}
+.verso-frase em { color: #00b4ff; font-style: normal; }
+.verso-bottom {
+  position: absolute; bottom: 44px; left: 0; right: 0;
+  display: flex; justify-content: center; gap: 52px;
+}
+.verso-c { font-size: 12px; color: rgba(255,255,255,0.25); letter-spacing: 0.04em; }
+.verso-c span { color: rgba(0,190,255,0.5); margin-right: 7px; }
+</style>
+</head>
+<body>
+
+<!-- PÁGINA 1: FRENTE INSTITUCIONAL -->
+<div class="page" data-document-role="page" data-label="Institucional — Frente">
+  <svg class="waves" viewBox="0 0 1063 591" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="wg1" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#00b4ff" stop-opacity="0"/><stop offset="0.35" stop-color="#00b4ff" stop-opacity="0.14"/><stop offset="0.7" stop-color="#008cdc" stop-opacity="0.11"/><stop offset="1" stop-color="#00b4ff" stop-opacity="0"/></linearGradient>
+      <linearGradient id="wg2" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#00b4ff" stop-opacity="0"/><stop offset="0.35" stop-color="#00b4ff" stop-opacity="0.1"/><stop offset="0.7" stop-color="#008cdc" stop-opacity="0.08"/><stop offset="1" stop-color="#00b4ff" stop-opacity="0"/></linearGradient>
+      <radialGradient id="vig" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#050d1a" stop-opacity="0"/><stop offset="100%" stop-color="#050d1a" stop-opacity="0.65"/></radialGradient>
+    </defs>
+    <path d="M0,80 C200,120 400,20 600,90 S900,160 1063,80" stroke="url(#wg1)" stroke-width="1.2" fill="none"/>
+    <path d="M0,140 C180,180 380,80 580,150 S880,220 1063,140" stroke="url(#wg1)" stroke-width="1" fill="none"/>
+    <path d="M0,200 C220,240 420,140 620,210 S920,280 1063,200" stroke="url(#wg1)" stroke-width="1" fill="none"/>
+    <path d="M0,260 C200,300 400,200 600,270 S900,340 1063,260" stroke="url(#wg2)" stroke-width="0.9" fill="none"/>
+    <path d="M0,320 C180,360 380,260 580,330 S880,400 1063,320" stroke="url(#wg2)" stroke-width="0.9" fill="none"/>
+    <path d="M0,380 C220,420 420,320 620,390 S920,460 1063,380" stroke="url(#wg2)" stroke-width="0.8" fill="none"/>
+    <path d="M0,440 C200,480 400,380 600,450 S900,510 1063,440" stroke="url(#wg2)" stroke-width="0.8" fill="none"/>
+    <path d="M0,500 C180,535 380,445 580,510 S880,565 1063,500" stroke="url(#wg2)" stroke-width="0.7" fill="none"/>
+    <path d="M0,160 C250,210 480,90 700,175 S950,250 1063,160" stroke="#00c8ff" stroke-width="1.5" fill="none" opacity="0.07"/>
+    <path d="M0,350 C260,400 490,280 710,365 S960,440 1063,350" stroke="#00c8ff" stroke-width="1.4" fill="none" opacity="0.06"/>
+    <rect width="1063" height="591" fill="url(#vig)"/>
+  </svg>
+  <div class="accent-dot"></div>
+  <div class="inst-inner">
+    <div class="inst-top">
+      <div>
+        <div class="inst-gk">G<span>K</span></div>
+        <div class="inst-gk-sub">Digital Performance</div>
+      </div>
+      <div class="inst-tag">Guarulhos · SP · Est. 2026</div>
+    </div>
+    <div class="inst-mid">
+      <div class="inst-about">
+        A <strong>GK Digital</strong> é uma empresa local de Guarulhos especializada em
+        transformar pequenos negócios com <strong>tecnologia acessível e eficiente</strong>.
+        Desenvolvemos sites, cardápios digitais e sistemas sob medida —
+        com suporte direto, sem intermediários.
+      </div>
+      <div class="inst-rule"></div>
+      <div class="inst-founders">
+        <div>
+          <div class="founder-name">Kauã Greco</div>
+          <div class="founder-role">Co-fundador · CEO</div>
+        </div>
+        <div>
+          <div class="founder-name">Gabriel Silva</div>
+          <div class="founder-role">Co-fundador · Diretor Comercial</div>
+        </div>
+      </div>
+    </div>
+    <div class="inst-bottom">
+      <div class="inst-contacts">
+        <div class="ic">📞 <span>(11) 96130-4238</span></div>
+        <div class="ic">✉️ <span>gkdigital50@gmail.com</span></div>
+        <div class="ic">🌐 <span>gkdigital.com.br</span></div>
+      </div>
+      <div class="inst-social">@gk.digitalbr</div>
+    </div>
+  </div>
+  <div class="accent-line"></div>
+</div>
+
+<!-- PÁGINA 2: VERSO -->
+<div class="page" data-document-role="page" data-label="Verso">
+  <svg class="waves" viewBox="0 0 1063 591" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="wg3" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#00b4ff" stop-opacity="0"/><stop offset="0.35" stop-color="#00b4ff" stop-opacity="0.13"/><stop offset="0.7" stop-color="#008cdc" stop-opacity="0.1"/><stop offset="1" stop-color="#00b4ff" stop-opacity="0"/></linearGradient>
+      <radialGradient id="vig2" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#050d1a" stop-opacity="0"/><stop offset="100%" stop-color="#050d1a" stop-opacity="0.65"/></radialGradient>
+    </defs>
+    <path d="M0,100 C230,150 460,50 690,120 S950,190 1063,100" stroke="url(#wg3)" stroke-width="1.2" fill="none"/>
+    <path d="M0,180 C210,230 440,130 670,200 S940,270 1063,180" stroke="url(#wg3)" stroke-width="1" fill="none"/>
+    <path d="M0,260 C240,310 470,210 700,280 S960,350 1063,260" stroke="url(#wg3)" stroke-width="1" fill="none"/>
+    <path d="M0,340 C220,385 450,290 680,355 S945,420 1063,340" stroke="url(#wg3)" stroke-width="0.9" fill="none"/>
+    <path d="M0,420 C230,460 460,370 690,435 S950,495 1063,420" stroke="url(#wg3)" stroke-width="0.9" fill="none"/>
+    <path d="M0,490 C215,525 445,450 675,510 S940,560 1063,490" stroke="url(#wg3)" stroke-width="0.8" fill="none"/>
+    <path d="M0,200 C270,255 510,140 750,220 S970,300 1063,200" stroke="#00c8ff" stroke-width="1.5" fill="none" opacity="0.07"/>
+    <path d="M0,390 C260,435 500,320 740,400 S965,470 1063,390" stroke="#00c8ff" stroke-width="1.4" fill="none" opacity="0.06"/>
+    <rect width="1063" height="591" fill="url(#vig2)"/>
+  </svg>
+  <div class="accent-dot"></div>
+  <div class="verso-inner">
+    <div class="verso-gk">G<span>K</span></div>
+    <div class="verso-sub">Digital Performance</div>
+    <div class="verso-rule"></div>
+    <div class="verso-frase">
+      Sua empresa no digital —<br>
+      <em>do jeito certo</em>, do começo ao fim.
+    </div>
+  </div>
+  <div class="verso-bottom">
+    <div class="verso-c"><span>W</span>gkdigital.com.br</div>
+    <div class="verso-c"><span>T</span>(11) 96130-4238</div>
+    <div class="verso-c"><span>@</span>gk.digitalbr</div>
+  </div>
+  <div class="accent-line"></div>
+</div>
+
+</body>
+</html>
