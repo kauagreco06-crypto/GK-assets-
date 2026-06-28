@@ -15,14 +15,7 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-/* ondas SVG inline */
-.waves {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-}
+.waves { position: absolute; inset: 0; width: 100%; height: 100%; }
 
 .accent-line {
   position: absolute; bottom: 0; right: 0;
@@ -36,10 +29,10 @@
   background: #00b4ff; opacity: 0.4;
 }
 
-/* ── INSTITUCIONAL FRENTE ── */
+/* ── FRENTE ── */
 .inst-inner {
   position: absolute; inset: 0;
-  padding: 64px 76px;
+  padding: 60px 72px;
   display: flex; flex-direction: column; justify-content: space-between;
 }
 .inst-top { display: flex; align-items: flex-start; justify-content: space-between; }
@@ -52,32 +45,45 @@
   font-size: 11px; font-weight: 400; letter-spacing: 0.32em;
   text-transform: uppercase; color: rgba(255,255,255,0.52); margin-top: 6px;
 }
+/* Guarulhos tag — azul claro */
 .inst-tag {
-  font-size: 10px; font-weight: 600; letter-spacing: 0.16em;
-  text-transform: uppercase; color: rgba(0,190,255,0.7);
-  border: 1.5px solid rgba(0,190,255,0.25); border-radius: 30px;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.16em;
+  text-transform: uppercase; color: #4dd0ff;
+  border: 1.5px solid rgba(77,208,255,0.35); border-radius: 30px;
   padding: 8px 20px; margin-top: 6px; white-space: nowrap;
 }
-.inst-mid { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 16px 0 0; }
+
+.inst-mid { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 14px 0 0; }
+
+/* Texto principal maior e mais legível */
 .inst-about {
-  font-size: 14px; font-weight: 300; line-height: 1.85;
-  color: rgba(255,255,255,0.42); max-width: 660px; letter-spacing: 0.02em;
+  font-size: 16px; font-weight: 400; line-height: 1.85;
+  color: rgba(255,255,255,0.62); max-width: 680px; letter-spacing: 0.02em;
 }
-.inst-about strong { color: rgba(255,255,255,0.75); font-weight: 500; }
-.inst-rule { width: 40px; height: 2px; background: #00b4ff; opacity: 0.65; border-radius: 2px; margin: 22px 0; }
+/* GK Digital em branco */
+.inst-about .hl-white { color: #ffffff; font-weight: 600; }
+/* tecnologia acessível e eficiente em azul claro */
+.inst-about .hl-blue { color: #4dd0ff; font-weight: 600; }
+
+.inst-rule { width: 40px; height: 2px; background: #00b4ff; opacity: 0.65; border-radius: 2px; margin: 18px 0; }
 .inst-founders { display: flex; gap: 52px; }
 .founder-name {
   font-family: 'Playfair Display', serif; font-weight: 700;
   font-size: 20px; color: #ffffff; letter-spacing: -0.3px;
 }
+/* Cargo em branco */
 .founder-role {
-  font-size: 10px; font-weight: 300; letter-spacing: 0.16em;
-  text-transform: uppercase; color: rgba(255,255,255,0.32); margin-top: 4px;
+  font-size: 10px; font-weight: 500; letter-spacing: 0.16em;
+  text-transform: uppercase; color: #ffffff; margin-top: 4px;
+  opacity: 0.75;
 }
+
 .inst-bottom { display: flex; align-items: flex-end; justify-content: space-between; }
-.inst-contacts { display: flex; flex-direction: column; gap: 9px; }
-.ic { display: flex; align-items: center; gap: 11px; font-size: 13px; color: rgba(255,255,255,0.65); }
-.inst-social { font-size: 12px; font-weight: 500; color: rgba(0,190,255,0.6); letter-spacing: 0.06em; }
+.inst-contacts { display: flex; flex-direction: column; gap: 10px; }
+.ic { display: flex; align-items: center; gap: 11px; font-size: 14px; color: rgba(255,255,255,0.7); }
+.ic svg { width: 16px; height: 16px; flex-shrink: 0; }
+/* Instagram azul claro */
+.inst-social { font-size: 13px; font-weight: 600; color: #4dd0ff; letter-spacing: 0.06em; }
 
 /* ── VERSO ── */
 .verso-inner {
@@ -90,45 +96,46 @@
   font-size: 110px; color: #ffffff; letter-spacing: -6px; line-height: 1;
 }
 .verso-gk span { color: #0077bb; }
+/* Digital Performance mais claro e grosso */
 .verso-sub {
-  font-size: 13px; font-weight: 400; letter-spacing: 0.38em;
-  text-transform: uppercase; color: rgba(255,255,255,0.52); margin-top: 14px;
+  font-size: 14px; font-weight: 600; letter-spacing: 0.36em;
+  text-transform: uppercase; color: rgba(255,255,255,0.75); margin-top: 14px;
 }
-.verso-rule { width: 44px; height: 2px; background: #00b4ff; opacity: 0.65; border-radius: 2px; margin: 28px 0; }
+.verso-rule { width: 44px; height: 2px; background: #00b4ff; opacity: 0.65; border-radius: 2px; margin: 26px 0; }
 .verso-frase {
   font-family: 'Playfair Display', serif; font-style: italic;
   font-size: 22px; color: rgba(255,255,255,0.72);
   text-align: center; line-height: 1.5;
 }
 .verso-frase em { color: #00b4ff; font-style: normal; }
+/* 3 itens rodapé mais claros e maiores */
 .verso-bottom {
-  position: absolute; bottom: 44px; left: 0; right: 0;
+  position: absolute; bottom: 40px; left: 0; right: 0;
   display: flex; justify-content: center; gap: 52px;
 }
-.verso-c { font-size: 12px; color: rgba(255,255,255,0.25); letter-spacing: 0.04em; }
-.verso-c span { color: rgba(0,190,255,0.5); margin-right: 7px; }
+.verso-c { font-size: 13px; font-weight: 500; color: rgba(255,255,255,0.55); letter-spacing: 0.05em; }
+.verso-c span { color: #4dd0ff; margin-right: 7px; }
 </style>
 </head>
 <body>
 
-<!-- PÁGINA 1: FRENTE INSTITUCIONAL -->
+<!-- PÁGINA 1: FRENTE -->
 <div class="page" data-document-role="page" data-label="Institucional — Frente">
   <svg class="waves" viewBox="0 0 1063 591" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
     <defs>
       <linearGradient id="wg1" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#00b4ff" stop-opacity="0"/><stop offset="0.35" stop-color="#00b4ff" stop-opacity="0.14"/><stop offset="0.7" stop-color="#008cdc" stop-opacity="0.11"/><stop offset="1" stop-color="#00b4ff" stop-opacity="0"/></linearGradient>
-      <linearGradient id="wg2" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#00b4ff" stop-opacity="0"/><stop offset="0.35" stop-color="#00b4ff" stop-opacity="0.1"/><stop offset="0.7" stop-color="#008cdc" stop-opacity="0.08"/><stop offset="1" stop-color="#00b4ff" stop-opacity="0"/></linearGradient>
+      <linearGradient id="wg2" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#00b4ff" stop-opacity="0"/><stop offset="0.35" stop-color="#00b4ff" stop-opacity="0.09"/><stop offset="0.7" stop-color="#008cdc" stop-opacity="0.07"/><stop offset="1" stop-color="#00b4ff" stop-opacity="0"/></linearGradient>
       <radialGradient id="vig" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#050d1a" stop-opacity="0"/><stop offset="100%" stop-color="#050d1a" stop-opacity="0.65"/></radialGradient>
     </defs>
     <path d="M0,80 C200,120 400,20 600,90 S900,160 1063,80" stroke="url(#wg1)" stroke-width="1.2" fill="none"/>
-    <path d="M0,140 C180,180 380,80 580,150 S880,220 1063,140" stroke="url(#wg1)" stroke-width="1" fill="none"/>
-    <path d="M0,200 C220,240 420,140 620,210 S920,280 1063,200" stroke="url(#wg1)" stroke-width="1" fill="none"/>
-    <path d="M0,260 C200,300 400,200 600,270 S900,340 1063,260" stroke="url(#wg2)" stroke-width="0.9" fill="none"/>
-    <path d="M0,320 C180,360 380,260 580,330 S880,400 1063,320" stroke="url(#wg2)" stroke-width="0.9" fill="none"/>
-    <path d="M0,380 C220,420 420,320 620,390 S920,460 1063,380" stroke="url(#wg2)" stroke-width="0.8" fill="none"/>
-    <path d="M0,440 C200,480 400,380 600,450 S900,510 1063,440" stroke="url(#wg2)" stroke-width="0.8" fill="none"/>
-    <path d="M0,500 C180,535 380,445 580,510 S880,565 1063,500" stroke="url(#wg2)" stroke-width="0.7" fill="none"/>
-    <path d="M0,160 C250,210 480,90 700,175 S950,250 1063,160" stroke="#00c8ff" stroke-width="1.5" fill="none" opacity="0.07"/>
-    <path d="M0,350 C260,400 490,280 710,365 S960,440 1063,350" stroke="#00c8ff" stroke-width="1.4" fill="none" opacity="0.06"/>
+    <path d="M0,150 C180,190 380,90 580,160 S880,230 1063,150" stroke="url(#wg1)" stroke-width="1" fill="none"/>
+    <path d="M0,220 C220,260 420,160 620,230 S920,300 1063,220" stroke="url(#wg1)" stroke-width="1" fill="none"/>
+    <path d="M0,290 C200,330 400,230 600,300 S900,370 1063,290" stroke="url(#wg2)" stroke-width="0.9" fill="none"/>
+    <path d="M0,360 C180,400 380,300 580,370 S880,440 1063,360" stroke="url(#wg2)" stroke-width="0.9" fill="none"/>
+    <path d="M0,430 C220,470 420,370 620,440 S920,510 1063,430" stroke="url(#wg2)" stroke-width="0.8" fill="none"/>
+    <path d="M0,500 C200,535 400,450 600,510 S900,565 1063,500" stroke="url(#wg2)" stroke-width="0.7" fill="none"/>
+    <path d="M0,170 C250,220 480,100 700,185 S950,265 1063,170" stroke="#00c8ff" stroke-width="1.5" fill="none" opacity="0.07"/>
+    <path d="M0,360 C260,405 490,290 710,375 S960,450 1063,360" stroke="#00c8ff" stroke-width="1.4" fill="none" opacity="0.06"/>
     <rect width="1063" height="591" fill="url(#vig)"/>
   </svg>
   <div class="accent-dot"></div>
@@ -142,8 +149,8 @@
     </div>
     <div class="inst-mid">
       <div class="inst-about">
-        A <strong>GK Digital</strong> é uma empresa local de Guarulhos especializada em
-        transformar pequenos negócios com <strong>tecnologia acessível e eficiente</strong>.
+        A <span class="hl-white">GK Digital</span> é uma empresa local de Guarulhos especializada em
+        transformar pequenos negócios com <span class="hl-blue">tecnologia acessível e eficiente</span>.
         Desenvolvemos sites, cardápios digitais e sistemas sob medida —
         com suporte direto, sem intermediários.
       </div>
@@ -161,9 +168,25 @@
     </div>
     <div class="inst-bottom">
       <div class="inst-contacts">
-        <div class="ic">📞 <span>(11) 96130-4238</span></div>
-        <div class="ic">✉️ <span>gkdigital50@gmail.com</span></div>
-        <div class="ic">🌐 <span>gkdigital.com.br</span></div>
+        <!-- WhatsApp icon SVG oficial -->
+        <div class="ic">
+          <svg viewBox="0 0 24 24" fill="#25D366" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          <span>(11) 96130-4238</span>
+        </div>
+        <div class="ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#4dd0ff" stroke-width="1.8" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+          </svg>
+          <span>gkdigital50@gmail.com</span>
+        </div>
+        <div class="ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#4dd0ff" stroke-width="1.8" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/>
+          </svg>
+          <span>gkdigital.com.br</span>
+        </div>
       </div>
       <div class="inst-social">@gk.digitalbr</div>
     </div>
@@ -179,13 +202,13 @@
       <radialGradient id="vig2" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#050d1a" stop-opacity="0"/><stop offset="100%" stop-color="#050d1a" stop-opacity="0.65"/></radialGradient>
     </defs>
     <path d="M0,100 C230,150 460,50 690,120 S950,190 1063,100" stroke="url(#wg3)" stroke-width="1.2" fill="none"/>
-    <path d="M0,180 C210,230 440,130 670,200 S940,270 1063,180" stroke="url(#wg3)" stroke-width="1" fill="none"/>
-    <path d="M0,260 C240,310 470,210 700,280 S960,350 1063,260" stroke="url(#wg3)" stroke-width="1" fill="none"/>
-    <path d="M0,340 C220,385 450,290 680,355 S945,420 1063,340" stroke="url(#wg3)" stroke-width="0.9" fill="none"/>
-    <path d="M0,420 C230,460 460,370 690,435 S950,495 1063,420" stroke="url(#wg3)" stroke-width="0.9" fill="none"/>
-    <path d="M0,490 C215,525 445,450 675,510 S940,560 1063,490" stroke="url(#wg3)" stroke-width="0.8" fill="none"/>
-    <path d="M0,200 C270,255 510,140 750,220 S970,300 1063,200" stroke="#00c8ff" stroke-width="1.5" fill="none" opacity="0.07"/>
-    <path d="M0,390 C260,435 500,320 740,400 S965,470 1063,390" stroke="#00c8ff" stroke-width="1.4" fill="none" opacity="0.06"/>
+    <path d="M0,190 C210,240 440,140 670,210 S940,280 1063,190" stroke="url(#wg3)" stroke-width="1" fill="none"/>
+    <path d="M0,280 C240,330 470,230 700,300 S960,370 1063,280" stroke="url(#wg3)" stroke-width="1" fill="none"/>
+    <path d="M0,370 C220,415 450,315 680,385 S945,450 1063,370" stroke="url(#wg3)" stroke-width="0.9" fill="none"/>
+    <path d="M0,450 C230,490 460,400 690,465 S950,525 1063,450" stroke="url(#wg3)" stroke-width="0.9" fill="none"/>
+    <path d="M0,520 C215,550 445,475 675,535 S940,570 1063,520" stroke="url(#wg3)" stroke-width="0.8" fill="none"/>
+    <path d="M0,210 C270,265 510,150 750,230 S970,310 1063,210" stroke="#00c8ff" stroke-width="1.5" fill="none" opacity="0.07"/>
+    <path d="M0,400 C260,445 500,330 740,410 S965,480 1063,400" stroke="#00c8ff" stroke-width="1.4" fill="none" opacity="0.06"/>
     <rect width="1063" height="591" fill="url(#vig2)"/>
   </svg>
   <div class="accent-dot"></div>
